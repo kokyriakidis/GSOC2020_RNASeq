@@ -15,7 +15,7 @@ bg = ballgown(dataDir="tablemaker_output", samplePattern='sample_', meas='all')
 #Extract transcript-level FPKM mesurements from the ballgown object. 
 transcript_fpkm_matrix = texpr(bg, meas = "FPKM")
 
-#The first 1000 lines of the FPKM matrix produced by Ballgown, without counting the header.
+#The first 1000 lines of the FPKM matrix produced by Ballgown, not counting the header.
 fpkm_matrix_1000_lines = transcript_fpkm_matrix[1:1000,]
 
 #Save the previous matrix as a csv file.
